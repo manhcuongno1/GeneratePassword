@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generate</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <div class="main-content">
+      <h3>Password Generator</h3>
+      <div class="viewPassword">
+        <p class="views">PTx1f5DaFX</p>
+        <p class="copied hidden">copied</p>
+        <img src="./assets/imgs/icon-copy.svg" alt="" class="imga" />
+      </div>
+      <div class="generate-content">
+        <div class="charactercontent">
+          <p>Character Length</p>
+          <p id="Number1">10</p>
+        </div>
+        <input
+          type="range"
+          id="range1"
+          name="range1"
+          value="6"
+          step="1"
+          min="1"
+          max="20"
+          oninput="displayLength()"
+        />
+        <div class="input-content">
+          <div class="input1">
+            <input type="checkbox" id="inputs1" />
+            <p>Include Uppercase Letter</p>
+          </div>
+          <div class="input1">
+            <input type="checkbox" id="inputs2" />
+            <p>Include Lowercase Letter</p>
+          </div>
+          <div class="input1">
+            <input type="checkbox" id="inputs3" />
+            <p>Include Number Letter</p>
+          </div>
+          <div class="input1">
+            <input type="checkbox" id="inputs4" />
+            <p>Include Symbol Letter</p>
+          </div>
+        </div>
+        <div class="strength-content">
+          <p class="strength">strength</p>
+          <p class="medium">medium</p>
+          <div class="status">
+            <div class="bar1 weak"></div>
+            <div class="bar2 weak"></div>
+            <div class="bar3"></div>
+            <div class="bar4"></div>
+          </div>
+        </div>
+        <div class="btn-gnr">
+          <button class="btn">
+            Generate
+            <img
+              src="./assets/imgs/icon-arrow-right-black.svg"
+              alt=""
+              class="a"
+            />
+          </button>
+          <div id="message"></div>
+        </div>
+      </div>
+    </div>
+    <script src="pass.js"></script>
+  </body>
+</html>

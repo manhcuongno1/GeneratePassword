@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "JetBrains Mono", monospace;
+}
+body {
+  display: flex;
+  justify-content: center;
+  background-color: hsl(0deg 0% 5.49%);
+  align-items: center;
+  min-height: 100vh;
+}
+body h3 {
+  text-align: center;
+  margin-top: 30px;
+  color: hsl(249deg 8.06% 51.37%);
+}
+.main-content {
+  width: 420px;
+  color: hsl(247.5deg 9.09% 82.75%);
+}
+.title-content {
+  text-align: center;
+}
+.viewPassword {
+  background-color: hsl(247.5deg 10.26% 15.29%);
+  display: flex;
+  height: 3.3rem;
+  align-items: center;
+  font-size: 25px;
+  justify-content: space-between;
+  margin-top: 2rem;
+  padding: 0px 20px;
+  position: relative;
+}
+.viewPassword p {
+  cursor: pointers;
+}
+.viewPassword img {
+  width: 20px;
+  height: 20px;
+}
+.viewPassword img:hover {
+  cursor: pointer;
+}
+.views {
+  cursor: default;
+}
+.copied {
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-left: 8.8rem;
+  color: hsl(127.76deg 97.7% 82.94%);
+  position: absolute;
+  right: 3.2rem;
+}
+.generate-content {
+  background-color: hsl(247.5deg 10.26% 15.29%);
+  margin-top: 20px;
+  padding: 2rem 1.2rem;
+}
+.charactercontent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: hsl(250deg 11.54% 89.8%);
+}
+.charactercontent p {
+  cursor: default;
+}
+#Number1 {
+  color: hsl(127.25deg 100% 82.16%);
+  font-size: 1.5rem;
+}
+#range1 {
+  margin-top: 1rem;
+  width: 100%;
+}
+#range1:hover {
+  cursor: pointer;
+}
+.input-content {
+  margin-top: 1.2rem;
+}
+.input1 {
+  display: flex;
+  padding: 0.4rem 0;
+}
+.input1 p {
+  margin-left: 0.7rem;
+}
+.strength-content {
+  display: flex;
+  background-color: hsl(247.5deg 14.81% 10.59%);
+  padding: 1rem 1.4rem;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+  position: relative;
+}
+.strength {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: hsl(248.57deg 5.69% 51.76%);
+  cursor: default;
+}
+.medium {
+  text-transform: uppercase;
+  /* margin-left: 10rem; */
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: hsl(250deg 15.79% 92.55%);
+  cursor: default;
+  position: absolute;
+  right: 4.8rem;
+  letter-spacing: -1px;
+}
+.status {
+  display: flex;
+}
+.status div {
+  width: 0.5rem;
+  height: 1.2rem;
+  /* background-color: yellow; */
+  border: 1px solid hsl(247.5deg 3.85% 59.22%);
+  margin: 0 2px;
+}
+button {
+  background-color: hsl(127.25deg 100% 82.16%);
+  width: 100%;
+  padding: 1rem 0;
+  text-transform: uppercase;
+  margin-top: 8px;
+  border: 1px solid hsl(130.29deg 81.4% 83.14%);
+}
+button:hover {
+  cursor: pointer;
+  background-color: hsl(247.5deg 10.26% 15.29%);
+  border: 1px solid hsl(130.29deg 81.4% 83.14%);
+  color: hsl(130.29deg 81.4% 83.14%);
+}
+input[type="range"] {
+  -webkit-appearance: none;
+  height: 6px;
+  background-color: hsl(126.28deg 97.73% 82.75%);
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: hsl(252deg 10.64% 90.78%);
+  border: 2px solid hsl(252deg 10.64% 90.78%);
+}
+input[type="range"]:hover::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: black;
+  border: 2px solid hsl(126.28deg 97.73% 82.75%);
+}
+button:hover path {
+  fill: aquamarine;
+}
+input[type="checkbox"] {
+  accent-color: 2rem;
+}
+
+.tooweak {
+  background-color: red;
+  border: 2px solid red !important;
+}
+
+.weak {
+  /* background-color: hsl(var(--clr-orange)); */
+  background-color: orangered;
+  border: 2px solid orangered !important;
+}
+
+.medium1 {
+  background-color: yellow;
+  border: 2px solid yellow !important;
+}
+
+.strong {
+  background-color: green;
+  border: 2px solid green !important;
+}
+input[type="checkbox"] {
+  -webkit-appearance: none; /* loại bỏ giao diện mặc định */
+  appearance: none;
+  width: 1rem; /* chiều rộng của checkbox */
+  height: 1rem; /* chiều cao của checkbox */
+  outline: none; /* loại bỏ đường viền */
+  cursor: pointer; /* biến con trỏ chuột thành hình bàn tay */
+  background-color: hsl(247.5deg 10.26% 15.29%) !important;
+  border: 1px solid white;
+}
+input[type="checkbox"]:checked::before {
+  color: hsl(144, 26%, 4%);
+  background-color: hsl(126, 96%, 78%);
+  content: "\2714"; /* mã Unicode của dấu tích */
+  font-size: 0.7rem;
+  font-weight: 700;
+  display: block;
+  text-align: center;
+  height: 16px;
+  width: 16px;
+  transform: translate(-1px, -1px);
+}
+.hidden {
+  display: none;
+}
+.btn-gnr {
+  position: relative;
+}
+#message {
+  color: red;
+  position: absolute;
+  top: 4.5rem;
+  left: 3rem;
+}
